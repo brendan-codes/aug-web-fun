@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+h1 {
+    color: violet;
+}
+
+p {
+    color: blue;
+}
+
+.box {
+    background-color: red;
+    height: 150px;
+    width: 20%;
+    /* padding: 50px; */
+    border: 10px solid blue;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+.flag {
+    width: 400px;
+    height: 200px;
+}
+
+.blue, .white, .red {
+    width: 32%;
+    height: 100%;
+    display: inline-block;
+    margin: 0px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.white {
+    background-color: antiquewhite;
+    transform: skew(-45deg);
+}
+
+.red {
+    background-color: red;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*
+        body {
+            background-color: black;
+        } */
+
+        .flag {
+            position: absolute;
+            height: 200px;
+            width: 420px;
+        }
+
+        .red, .white {
+            height: 50%;
+            width: 100%;
+        }
+
+        .blue {
+            border-color: transparent transparent transparent blue;
+            border-width: 100px 200px;
+            border-style: solid;
+            /* width: 200px;
+            height: 200px; */
+            position: absolute;
+        }
+
+        .red {
+            background: radial-gradient(#e66465, #9198e5);
+        }
+
+        .white {
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="blue"></div>
+        <div class="white"></div>
+        <div class="red"></div>
+    </div>
+</body>
+</html>
