@@ -2,9 +2,9 @@ function magicalUnicorns(element){
     console.log(element.innerHTML);
     console.log("Hello world!");
 
-    // element.remove();
+    element.remove();
 
-    document.querySelector("#world").remove();
+    // document.querySelector("#world").remove();
 }
 
 function addChildren(element){
@@ -17,10 +17,10 @@ function updateChildrenAgain(element){
 
 // afternoon demo
 
-function updateCounter(){
-    var currentCount = parseInt(document.querySelector("#count").innerHTML);
+function updateCounter(id){
+    var currentCount = parseInt(document.querySelector(id).innerHTML);
     console.log(currentCount);
-    document.querySelector("#count").innerHTML = currentCount+1;
+    document.querySelector(id).innerHTML = currentCount+1;
 }
 
 
@@ -45,5 +45,14 @@ function buildWorld(x, y){
     document.querySelector("#world").innerHTML = world;
 }
 
-buildWorld(50, 50);
+// buildWorld(50, 50);
+
+
+function search(){
+    var userInput = document.querySelector("#search").value;
+    console.log(userInput);
+
+    alert(`You have searched for ${userInput}`);
+    document.querySelector("#searchResult").innerHTML = `<h1>You have searched for ${userInput} </h1>`;
+}
 

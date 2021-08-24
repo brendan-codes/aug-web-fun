@@ -54,3 +54,8 @@ console.log(typeof d.thing3[3]);
 console.log(typeof d.thing3[2]);
 
 // console.log(d);
+
+
+for (var i = arrPoison.length - 1; i >=0 ; i--){
+    arrPoisonReverse.push(arrPoison[i]);
+}

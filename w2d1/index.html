@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="world"></div>
-    <h1>Hello World!</h1>
+    <h1 onclick="updateCounter('#countwhatever')">Hello World! <span id="countwhatever">0</span></h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit sit laudantium molestiae obcaecati, a similique nobis molestias earum ex saepe iste eius, est maiores fugiat consequuntur. Dolorum, cupiditate et.</p>
     <button id="specialButton" class="button" unicorn="true" onclick="magicalUnicorns(this)">I am a button</button>
     <div>
@@ -22,11 +22,38 @@
     </div>
     <div class="counters">
         <p class="counter border">
-            xplicabo odio molestias impedit aperiam. Count: <span id="count">1</span>
+            xplicabo odio molestias impedit aperiam. Count: <span id="count1">1</span>
         </p>
-        <button onclick="updateCounter()" class="counter border">
+        <button onclick="updateCounter('#count1')" class="counter border">
             Click Me!
         </button>
+    </div>
+
+    <div class="counters">
+        <p class="counter border">
+            xplicabo odio molestias impedit aperiam. Count: <span id="count2">1</span>
+        </p>
+        <button onclick="updateCounter('#count2')" class="counter border">
+            Click Me!
+        </button>
+    </div>
+
+    <div class="counters">
+        <p class="counter border">
+            xplicabo odio molestias impedit aperiam. Count: <span id="count3">1</span>
+        </p>
+        <button onclick="updateCounter('#count3')" class="counter border">
+            Click Me!
+        </button>
+    </div>
+
+    <div>
+        <input type="text" id="search" placeholder="Search?">
+        <button onclick="search()">Search!</button>
+    </div>
+
+    <div id="searchResult">
+
     </div>
 
 </body>
