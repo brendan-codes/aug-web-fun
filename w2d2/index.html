@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container centered">
+    <div class="main">
+        <div class="logo container">
+            <h1>Main<span>Title</span></h1>
+            <div class="button-box container">
+                <button id="login" onclick="removeButton()">Login</button>
+                <button>Menu</button>
+            </div>
+        </div>
+        <div class="search container evenly center-aligned">
+            <div class="container center-aligned">
+                <input type="text" id="search">
+                <button onclick="search()">Search!</button>
+            </div>
+            <div class="image-text">
+                <img src="http://placekitten.com/1920/1080" alt="">
+                <h3>This is a good lookin cat</h3>
+            </div>
+            <div class="image-text">
+                <img src="http://placekitten.com/1920/1080" alt="">
+                <h3>This is a good lookin cat</h3>
+            </div>
+            <div class="image-text">
+                <img src="http://placekitten.com/1920/1080" alt="">
+                <h3>This is a good lookin cat</h3>
+            </div>
+            <div class="image-text">
+                <img src="http://placekitten.com/1920/1080" alt="">
+                <h3>This is a good lookin cat</h3>
+            </div>
+        </div>
+        <div class="content container">
+            <div class="col-3">
+                <h1>Popular Cats of the Day!</h1>
+                <div class="picture-box">
+                    <img src="http://placekitten.com/1920/1080" alt="">
+                    <div class="container space-between">
+                        <p>Hello my name is etc</p>
+                        <div class="like-count container center-aligned space-between">
+                            <img onclick="updateCounter('#count1')" src="http://placekitten.com/25/25" alt="">
+                            <p id="count1">99</p>
+                        </div>
+                    </div>
+                    <p>Hello this is more text <a href="">Hello link!</a></p>
+                </div>
+            </div>
+            <div class="col-2">
+                <h1>Popular Cats of the Day!</h1>
+                <div class="picture-box">
+                    <img src="http://placekitten.com/1920/1080" alt="">
+                    <div class="like-count container center-aligned space-between">
+                        <p>Hello my name is etc</p>
+                        <div class="container">
+                            <img onclick="updateCounter('#count2')" src="http://placekitten.com/25/25" alt="">
+                            <p id="count2">99</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>Popular Cats of the Day!</h1>
+                <div class="picture-box">
+                    <img src="http://placekitten.com/1920/1080" alt="">
+                    <div class="like-count container center-aligned space-between">
+                        <p>Hello my name is etc</p>
+                        <div class="container">
+                            <img onclick="updateCounter('#count3')" src="http://placekitten.com/25/25" alt="">
+                            <p id="count3">99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
